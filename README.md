@@ -1,3 +1,6 @@
+THE CODE IS IN CYBERLABS FOLDER........
+
+
 # mini-insta
 The purpose of this project is used to create a web app named mini insta for the WOC cyberlabs 2022.
 DESCRIPTION:  A website wherein users can upload and store images and share them as well with other users. These features are expected-----
