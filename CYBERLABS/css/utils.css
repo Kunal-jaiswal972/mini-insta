@@ -1,0 +1,40 @@
+
+*{
+--c1 : #65a590;
+--c2 : #dad9b7;
+--primary-bgclr: #c5aa6a;
+--primary2-bgclr: #996515;
+--primary3-bgclr: #cf9c71;
+}
+.flex-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-size {
+    cursor: pointer;
+    width: 2em;
+}
+
+.border-right {
+    border-right: solid black 2px;
+}
+
+.border-left {
+    border-left: solid black 2px;
+}
+.border-icon{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 9px;
+}
+.margin-var{
+    margin-top: 50px;
+}
