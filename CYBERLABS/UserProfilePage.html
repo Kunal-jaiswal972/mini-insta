@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROFILE PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel="stylesheet" href="css/UserProfilePage.css">
+</head>
+
+<body id="body">
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li><i class="fa-solid fa-message"></i></li>
+                <li><i class="fa-solid fa-tv"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="searchbox">
+                <input type="text" placeholder="Search Tags...">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsToggle()">
+                <img src="images/usericon.png">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/usericon.png">
+                    <div>
+                        <p style="margin-bottom: 5px;">Username</p>
+                        <a href="HomePage.html">Go to Homepage</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p style="margin-bottom: 5px;">Give us Feedback</p>
+                        <a href="#">Help us to improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings <i style="font-size: 20px;" class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<i style="font-size: 20px;" class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#" role="button" id="logOutLink">LogOut<i style="font-size: 20px;"
+                            class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- profile page  -->
+
+    <div class="profile-details">
+        <div class="user-right-details">
+            <div class="user-box">
+                <img src="images/usericon.png">
+                <p>Username</p>
+            </div>
+            <span class="bio">Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, blanditiis? t.
+                Necessitatibus, officiis. Lorem ipsum dolor sit amet consectet </span>
+        </div>
+        <div class="user-left-details">
+            <ul>
+                <li>Name <span>:</span> </li>
+                <li>Age <span>:</span> </li>
+                <li>Gender <span>:</span> </li>
+            </ul>
+            <div class="edit-profile">
+                <button id="modalBtn">Edit Your Profile</button>
+            </div>
+        </div>
+
+        <!-- Modal content -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="top-modal">
+                    <p>Edit Your Profile</p>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="name">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="firstName" placeholder="Firstname">
+                    <i class="fa fa-user" style="left: 378px;"></i>
+                    <input type="text" id="lastName" placeholder="Lastname">
+                </div>
+                <div class="name">
+                    <i class="fa-solid fa-calendar"></i>
+                    <input type="number" id="age" max="200" min="1"  oninput="this.value = !!this.value && Math.abs(this.value) > 0 ? Math.abs(this.value) : null" placeholder="Age">
+                </div>
+                <textarea maxlength="80" placeholder="Edit Your Bio"></textarea>
+                <div class="edit-profile" style="display: flex; gap: 10px;">
+                    <button id="submitBtn">Save Changes</button>
+                    <button id="cancelBtn">Discard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photo collection page  -->
+
+    <div class="photo-collection-page">
+        <div class="photo-box">
+            <img src="images/advertisement.png">
+        </div>
+        <div class="photo-box">
+            <img src="images/advertisement.png">
+        </div>
+        <div class="photo-box">
+            <img src="images/advertisement.png">
+        </div>
+        <div class="photo-box">
+            <img src="images/advertisement.png">
+        </div>
+        <div class="photo-box">
+            <img src="images/advertisement.png">
+        </div>
+        <div class="photo-box">
+            <img src="images/advertisement.png">
+        </div>
+    </div>
+
+    <footer>
+        <p>All rights reserved &copy;</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="js/UserProfilePage.js"></script>
+    <script src="https://kit.fontawesome.com/6cb478aaec.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
